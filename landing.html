@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="websitename.com">
+		<meta name="author" content="websitename.com">
+		<title>Website Name</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/public/main.css">
+		<script src="/public/main.js"></script>
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img id="logo_img_nav" src="/public/logo.png"/>
+					</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+
+		<div class="container">
+
+			<div class="row" id="spacer">
+			</div>
+			<div class="row">
+				<div class="col-sm-6" id="info_div">
+					<img id="logo_img" src="/public/logo.png"/>
+					<h1 class="jumbo_text">Big jumbo text one.</h1>
+					<h1 class="jumbo_text">Big jumbo text two.</h1>
+					<p class="lead">Small jumbo text on bottom. Something something more stuff here.</p>
+					<div class="alert alert-info hidden" id="err_msg">[Info Text]</div>
+					<div class="alert alert-danger hidden" id="err_msg">Oops... something went wrong!</div>
+					<div class="alert alert-success hidden" id="sucess_msg">Thanks! We'll be in touch with you momentarilty!</div>
+					<div class="input-group input-group-lg">
+						<input type="text" class="form-control" placeholder="Email Address" id="email_input">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" id="landing-submit">
+								SUBMIT
+							</button>
+						</span>
+					</div>
+				</div>
+				<div class="col-sm-1">
+				</div>
+				<div class="col-sm-4 text-center">
+					<img id="iphone_img" src="/public/iphone.png"/>
+				</div>
+			</div>
+
+		</div><!-- /.container -->
+	</body>
+</html>

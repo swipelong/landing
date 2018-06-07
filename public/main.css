@@ -1,0 +1,85 @@
+#spacer {
+	margin-top: 50px;
+}
+#iphone_img {
+	height: 75vh;
+	margin-top: 50px;
+	box-shadow: 0px 0px 100px #00000029;
+	border-radius: 46px;
+}
+#logo_img {
+	max-width: 300px;
+	margin-top: 50px;
+	margin-bottom: 58px;
+}
+#logo_img_nav {
+	max-width: 300px;
+}
+h1.jumbo_text {
+	margin-top: 0px;
+	font-weight: bolder;
+}
+p.lead {
+	font-weight: 400;
+	font-size: 15px;
+}
+input#email_input {
+	font-weight: 200;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+#landing-submit {
+	background: #ffab00;
+	border: #ffab00;
+	color: white;
+	font-size: 11px !important;
+	letter-spacing: 2px;
+	padding-left: 50px !important;
+	padding-right: 50px !important;
+	text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+	.navbar {
+		visibility: hidden;
+	}
+}
+@media screen and (max-width: 768px) {
+	#logo_img {
+		display: none;
+	}
+	div#info_div {
+		margin-top: 50px;
+	}
+}
+nav.navbar.navbar-inverse.navbar-fixed-top {
+	background: white;
+	border: 1px solid #c5c5c5;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+nav.navbar.navbar-inverse.navbar-fixed-top {
+	background: white;
+	border: 1px solid #c5c5c5;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+button.navbar-toggle.collapsed {
+	border: none;
+}
+span.icon-bar {
+	background: #c9c9c9 !important;
+	height: 3px !important;
+	width: 29px !important;
+	border-radius: 0px !important;
+}
+#logo_img_nav {
+	height: 40px;
+	margin-top: 6px;
+	margin-left: 8px;
+}
+a.navbar-brand {
+    padding: 0px;
+}
+
