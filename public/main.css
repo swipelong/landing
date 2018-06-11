@@ -29,38 +29,64 @@ input#email_input {
 	letter-spacing: 1px;
 }
 #landing-submit {
-	background: #ffab00;
-	border: #ffab00;
+	background: #00b35c;
+	border: #00b35c;
 	color: white;
 	font-size: 11px !important;
 	letter-spacing: 2px;
 	padding-left: 50px !important;
 	padding-right: 50px !important;
 	text-shadow: none;
+	border-radius: 0px 4px 4px 0px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) { /* Large */
 	.navbar {
 		visibility: hidden;
 	}
+	h1.jumbo_text {
+		font-size: 31px;
+	}
+	p.lead {
+		font-size: 17px;
+	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 991px) { /* Extra-Large */
+	h1.jumbo_text {
+		font-size: 41px;
+	}
+	p.lead {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 1200px) { /* Extra-Extra Large */
+	h1.jumbo_text {
+		font-size: 50px;
+	}
+}
+@media screen and (max-width: 768px) { /* Small */
 	#logo_img {
 		display: none;
 	}
 	div#info_div {
 		margin-top: 50px;
 	}
+	h1.jumbo_text {
+		font-size: 33px;
+	}
+	p.lead {
+		font-size: 18px;
+	}
 }
 nav.navbar.navbar-inverse.navbar-fixed-top {
 	background: white;
-	border: 1px solid #c5c5c5;
+	border: 1px solid #oab260;
 	border-top: none;
 	border-left: none;
 	border-right: none;
 }
 nav.navbar.navbar-inverse.navbar-fixed-top {
 	background: white;
-	border: 1px solid #c5c5c5;
+	border: 1px solid #oab260;
 	border-top: none;
 	border-left: none;
 	border-right: none;
@@ -82,4 +108,9 @@ span.icon-bar {
 a.navbar-brand {
     padding: 0px;
 }
-
+/* flat alerts please */
+.alert {
+	border: none !important;
+	background-image: none;
+	background-repeat: none;
+}
