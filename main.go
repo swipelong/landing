@@ -9,8 +9,6 @@ import (
 )
 
 var templates = template.Must(template.ParseFiles(
-	"edit.html",
-	"view.html",
 	"landing.html"))
 
 func landingHandler(w http.ResponseWriter, r *http.Request) {
