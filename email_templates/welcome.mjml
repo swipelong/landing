@@ -1,0 +1,24 @@
+<mjml version="3.3.3">
+  <mj-body background-color="#F4F4F4" color="#55575d" font-family="Arial, sans-serif">
+    <mj-section background-color="#fff" background-repeat="repeat" padding="20px 0" text-align="center" vertical-align="top">
+      <mj-column>
+        <mj-image align="center" padding="10px 25px" src="" width="128px"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" background-repeat="repeat" background-size="auto" padding="20px 0px 20px 0px" text-align="center" vertical-align="top">
+      <mj-column>
+        <mj-text align="center" color="#55575d" font-family="Arial, sans-serif" font-size="25px" line-height="28px" padding="0px 25px 0px 25px">Welcome to SwipeLong!</mj-text>
+                <mj-text align="center" color="#55575d" font-family="Arial, sans-serif" font-size="14px" line-height="28px" padding="0px 25px 0px 25px">We know you’re going to love using real financial market data and a fun learning experience that gives you a reason to skip that date and get rich instead.</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#bbb" background-repeat="repeat" padding="20px 0" text-align="center" vertical-align="top">
+      <mj-column>
+        <mj-text align="center" color="#ffffff" font-family="Arial, sans-serif" font-size="13px" line-height="22px" padding="10px 25px">Created&nbsp;by&nbsp;<a style="color:#00b35c" href="http://www.mailjet.com"><b>SwipeLong</b></a>, 2018</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-repeat="repeat" background-size="auto" padding="20px 0px 20px 0px" text-align="center" vertical-align="top">
+      <mj-column>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
