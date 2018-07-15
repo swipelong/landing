@@ -9,10 +9,41 @@ import (
 )
 
 var templates = template.Must(template.ParseFiles(
-	"landing.html"))
+	"templates/index.html",
+	"templates/unisexAd.html",
+	"templates/maleAd.html",
+	"templates/femaleAd.html"))
 
-func landingHandler(w http.ResponseWriter, r *http.Request) {
-	err := templates.ExecuteTemplate(w, "landing.html", nil)
+// swipelong.com/
+func indexHandler(w http.ResponseWriter, r *http.Request) {
+	err := templates.ExecuteTemplate(w, "index.html", nil)
+	if err != nil {
+		fmt.Println(err.Error())
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+// swipelong.com/ad0
+func unisexAdHandler(w http.ResponseWriter, r *http.Request) {
+	err := templates.ExecuteTemplate(w, "unisexAd.html", nil)
+	if err != nil {
+		fmt.Println(err.Error())
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+// swipelong.com/ad1
+func maleAdHandler(w http.ResponseWriter, r *http.Request) {
+	err := templates.ExecuteTemplate(w, "maleAd.html", nil)
+	if err != nil {
+		fmt.Println(err.Error())
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+// swipelong.com/ad2
+func femaleAdHandler(w http.ResponseWriter, r *http.Request) {
+	err := templates.ExecuteTemplate(w, "femaleAd.html", nil)
 	if err != nil {
 		fmt.Println(err.Error())
 		http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -45,7 +76,10 @@ func apiHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	// normal routes.
-	http.HandleFunc("/", landingHandler)
+	http.HandleFunc("/", indexHandler)
+	http.HandleFunc("/ad0", unisexAdHandler)
+	http.HandleFunc("/ad1", maleAdHandler)
+	http.HandleFunc("/ad2", femaleAdHandler)
 	http.HandleFunc("/api", apiHandler)
 	// public routes.
 	fs := http.FileServer(http.Dir("public"))

@@ -64,7 +64,7 @@ input#email_input {
 	}
 }
 @media screen and (max-width: 768px) { /* Small */
-	#logo_img {
+	#logo_img:not(.logo_stay) {
 		display: none;
 	}
 	div#info_div {
@@ -113,4 +113,122 @@ a.navbar-brand {
 	border: none !important;
 	background-image: none;
 	background-repeat: none;
+}
+/* ad0 (unisex/neutral) */
+html#ad0 {
+    background: linear-gradient(to bottom right, #0a2db1, #0ab160);
+}
+body#ad0 {
+    background: none;
+}
+nav#ad0 {
+    border: none !important;
+    background: none !important;
+}
+button#ad0.navbar-toggle.collapsed {
+    display: none;
+}
+html#ad0 h1.jumbo_text {
+    color: white;
+}
+html#ad0 p.lead {
+    color: white;
+}
+html#ad0 nav.navbar.navbar-inverse.navbar-fixed-top {
+    background: none !important;
+    border: none !important;
+}
+html#ad0 button.navbar-toggle.collapsed {
+    display: none;
+}
+/* ad1 (male) */
+nav#ad1 {
+    border: none !important;
+    background: none !important;
+}
+button#ad1.navbar-toggle.collapsed {
+    display: none;
+}
+html#ad1 h1.jumbo_text {
+    color: white;
+}
+html#ad1 p.lead {
+    color: white;
+}
+html#ad1 nav.navbar.navbar-inverse.navbar-fixed-top {
+    background: none !important;
+    border: none !important;
+}
+html#ad1 button.navbar-toggle.collapsed {
+    display: none;
+}
+
+/* ad2 (female) */
+html#ad2 {
+    background: pink;
+}
+body#ad2 {
+    background: none;
+}
+
+/* misc */
+img.iphone {
+    width: 100%;
+}
+h4.iphone-lable {
+    color: white;
+    font-size: 22px;
+}
+
+/* img thing */
+@media screen and (min-width: 768px) { /* Large */
+	.gend_ad .row.iphone-row {
+	    margin-top: -500px;
+	}
+	.gend_ad .container-fluid.gend_m {
+		background-image: url("/public/mstock.png");;
+		background-size: cover;
+	}
+}
+@media screen and (min-width: 991px) { /* Extra-Large */
+	.gend_ad .row.iphone-row {
+	    margin-top: -500px;
+	}
+	.gend_ad .container-fluid.gend_m {
+		background-image: url("/public/mstock.png");;
+		background-size: cover;
+	}
+}
+@media screen and (min-width: 1200px) { /* Extra-Extra Large */
+	.gend_ad .row.iphone-row {
+	    margin-top: -500px;
+	}
+	.gend_ad .container-fluid.gend_m {
+		background-image: url("/public/mstock.png");;
+		background-size: cover;
+	}
+}
+@media screen and (max-width: 768px) { /* Small */
+	.gend_ad h1.jumbo_text {
+		text-align: left;
+	}
+	.gend_ad p.lead {
+		text-align: left;
+	}
+	.gend_ad h4.iphone-lable {
+	    color: black;
+	    font-size: 30px;
+	}
+	.gend_ad div#master-image-row {
+		height: 100%;
+		padding-bottom: 50px;
+	}
+	.gend_ad #master-image-row {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.gend_ad #master-image-row.gend_m {
+		background-image: url("/public/mstock.png");;
+		background-size: cover;
+	}
 }
