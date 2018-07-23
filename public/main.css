@@ -182,9 +182,11 @@ h4.iphone-lable {
 
 /* img thing */
 @media screen and (min-width: 768px) { /* Large */
+/*
 	.gend_ad .row.iphone-row {
 	    margin-top: -500px;
 	}
+*/
 	.gend_ad .container-fluid.gend_m {
 		background-image: url("/public/mstock.png");;
 		background-size: cover;
@@ -198,9 +200,11 @@ h4.iphone-lable {
 	}
 }
 @media screen and (min-width: 991px) { /* Extra-Large */
+/*
 	.gend_ad .row.iphone-row {
 	    margin-top: -500px;
 	}
+*/
 	.gend_ad .container-fluid.gend_m {
 		background-image: url("/public/mstock.png");;
 		background-size: cover;
@@ -214,9 +218,11 @@ h4.iphone-lable {
 	}
 }
 @media screen and (min-width: 1200px) { /* Extra-Extra Large */
+/*
 	.gend_ad .row.iphone-row {
 	    margin-top: -500px;
 	}
+*/
 	.gend_ad .container-fluid.gend_m {
 		background-image: url("/public/mstock.png");;
 		background-size: cover;
