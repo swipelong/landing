@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="ad1" class="gend_ad">
+<html lang="en" id="ad0">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
 		<script src="/public/main.js"></script>
 	</head>
 
-	<body id="ad1">
+	<body id="ad0">
 
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
@@ -39,74 +39,68 @@
 				</div><!--/.nav-collapse -->
 			</div>
 		</nav>
-		<div class="container-fluid gend_f">
-			<div class="row gend_f" id="master-image-row">
-				<div class="row">
-					<div class="col-sm-8 col-sm-offset-2 text-center wtfbootstrap" id="info_div">
-						<img id="logo_img" src="/public/logo_white.png"/>
-						<h1 class="jumbo_text">Dating men never grew your portfolio.</h1>
-					</div>
+
+		<div class="container">
+
+			<div class="row" id="spacer">
+			</div>
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 text-center wtfbootstrap" id="info_div">
+					<img id="logo_img" src="/public/logo_white.png"/>
+					<h1 class="jumbo_text">Dating never grew your portfolio.</h1>
 				</div>
-				<div class="row">
-					<div class="col-sm-6 col-sm-offset-3 text-center wtfbootstrap">
-						<p class="lead">SwipeLong is the Tinder for investing. Learn how the stock market works in just a few minutes a day.<br><br>Join our exclusive free Beta today.</p>
-						<div class="alert alert-info hidden" id="info_msg">[Info Text]</div>
-						<div class="alert alert-danger hidden" id="err_msg">Oops... something went wrong!</div>
-						<div class="alert alert-success hidden" id="success_msg">Thanks! We'll be in touch!</div>
-						<div class="input-group input-group-lg">
-							<input type="text" class="form-control" placeholder="Email Address" id="email_input">
-							<span class="input-group-btn">
-								<button onclick="main.submit_email()"
-									class="btn btn-default" type="button" id="landing-submit">
-									SUBMIT
-								</button>
-	<script>
-	$("#email_input").on('keyup', function (e) {
-		if (e.keyCode == 13) {
-			main.submit_email();	
-		}
-	});
-	</script>
-							</span>
-						</div>
-						<br>
-						<br>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-center wtfbootstrap">
+					<p class="lead">Join our exclusive waitlist to swipe and discover the best companies of today and tomorrow.</p>
+					<div class="alert alert-info hidden" id="info_msg">[Info Text]</div>
+					<div class="alert alert-danger hidden" id="err_msg">Oops... something went wrong!</div>
+					<div class="alert alert-success hidden" id="success_msg">Thanks! We'll be in touch!</div>
+					<div class="input-group input-group-lg">
+						<input type="text" class="form-control" placeholder="Email Address" id="email_input">
+						<span class="input-group-btn">
+							<button onclick="main.submit_email()"
+								class="btn btn-default" type="button" id="landing-submit">
+								SUBMIT
+							</button>
+<script>
+$("#email_input").on('keyup', function (e) {
+	if (e.keyCode == 13) {
+		main.submit_email();	
+	}
+});
+</script>
+						</span>
 					</div>
 				</div>
 			</div>
+			<br>
+			<br>
+			<br>
+			<br>
 			<div class="row iphone-row">
 				<div class="col-sm-4 text-center">
 					<h4 class="iphone-lable">Learn</h4>
-					<img class="iphone" src="/public/f1.png"/>
+					<img class="iphone" src="/public/n1.png"/>
 				</div>
 				<div class="col-sm-4 text-center">
 					<h4 class="iphone-lable">Like</h4>
-					<img class="iphone" src="/public/f2.png"/>
+					<img class="iphone" src="/public/n2.png"/>
 				</div>
 				<div class="col-sm-4 text-center">
 					<h4 class="iphone-lable">Match</h4>
-					<img class="iphone" src="/public/f3.png"/>
+					<img class="iphone" src="/public/n3.png"/>
 				</div>
-			</div>
-			<div class="row gend_image_row">
 			</div>
 		</div><!-- /.container -->
 <script>
 window.onscroll = function() {
-    if ($(window).scrollTop() > 10) {
+    if ($(window).scrollTop() > 50) {
         $(".navbar").addClass("hidden");
     } else {
         $(".navbar").removeClass("hidden");
     }
 }
 </script>
-<style>
-body {
-	margin: 15px;
-}
-.navbar.navbar-inverse.navbar-fixed-top {
-    margin: 15px;
-}
-</style>
 	</body>
 </html>

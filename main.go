@@ -12,6 +12,7 @@ var templates = template.Must(template.ParseFiles(
 	"templates/index.html",
 	"templates/unisexAd.html",
 	"templates/maleAd.html",
+	"templates/newCallToAction.html",
 	"templates/femaleAd.html"))
 
 // swipelong.com/
@@ -26,6 +27,14 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 // swipelong.com/ad0
 func unisexAdHandler(w http.ResponseWriter, r *http.Request) {
 	err := templates.ExecuteTemplate(w, "unisexAd.html", nil)
+	if err != nil {
+		fmt.Println(err.Error())
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+func newCallToActionHandler(w http.ResponseWriter, r *http.Request) {
+	err := templates.ExecuteTemplate(w, "newCallToAction.html", nil)
 	if err != nil {
 		fmt.Println(err.Error())
 		http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -76,10 +85,13 @@ func apiHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	// normal routes.
-	http.HandleFunc("/", indexHandler)
-	http.HandleFunc("/ad0", unisexAdHandler)
+	http.HandleFunc("/", unisexAdHandler)
+	http.HandleFunc("/ad0", indexHandler)
 	http.HandleFunc("/ad1", maleAdHandler)
 	http.HandleFunc("/ad2", femaleAdHandler)
+	// Don't know if he wanted ad3 or ad4 so make them both work.
+	http.HandleFunc("/ad3", newCallToActionHandler)
+	http.HandleFunc("/ad4", newCallToActionHandler)
 	http.HandleFunc("/api", apiHandler)
 	// public routes.
 	fs := http.FileServer(http.Dir("public"))
