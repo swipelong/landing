@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="ad0">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
 		<script src="/public/main.js"></script>
 	</head>
 
-	<body id="ad0">
+	<body>
 
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
@@ -27,7 +27,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#">
-						<img id="logo_img_nav" src="/public/logo_white.png"/>
+						<img id="logo_img_nav" src="/public/logo.png"/>
 					</a>
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
@@ -45,14 +45,11 @@
 			<div class="row" id="spacer">
 			</div>
 			<div class="row">
-				<div class="col-sm-10 col-sm-offset-1 text-center wtfbootstrap" id="info_div">
-					<img id="logo_img" src="/public/logo_white.png"/>
-					<h1 class="jumbo_text">Dating never grew your portfolio.</h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-8 col-sm-offset-2 text-center wtfbootstrap">
-					<p class="lead">Join our exclusive waitlist to swipe and discover the best companies of today and tomorrow.</p>
+				<div class="col-sm-6" id="info_div">
+					<img id="logo_img" src="/public/logo.png"/>
+					<h1 class="jumbo_text">Tinder for investing.</h1>
+					<h1 class="jumbo_text">Swipe right to get rich.</h1>
+					<p class="lead"><br>Join our exclusive waitlist to swipe and discover the best companies of today and tomorrow.</p>
 					<div class="alert alert-info hidden" id="info_msg">[Info Text]</div>
 					<div class="alert alert-danger hidden" id="err_msg">Oops... something went wrong!</div>
 					<div class="alert alert-success hidden" id="success_msg">Thanks! We'll be in touch!</div>
@@ -73,34 +70,13 @@ $("#email_input").on('keyup', function (e) {
 						</span>
 					</div>
 				</div>
-			</div>
-			<br>
-			<br>
-			<br>
-			<br>
-			<div class="row iphone-row">
-				<div class="col-sm-4 text-center">
-					<h4 class="iphone-lable">Learn</h4>
-					<img class="iphone" src="/public/n1.png"/>
+				<div class="col-sm-1">
 				</div>
 				<div class="col-sm-4 text-center">
-					<h4 class="iphone-lable">Like</h4>
-					<img class="iphone" src="/public/n2.png"/>
-				</div>
-				<div class="col-sm-4 text-center">
-					<h4 class="iphone-lable">Match</h4>
-					<img class="iphone" src="/public/n3.png"/>
+					<img id="iphone_img" src="/public/m2.png"/>
 				</div>
 			</div>
+
 		</div><!-- /.container -->
-<script>
-window.onscroll = function() {
-    if ($(window).scrollTop() > 50) {
-        $(".navbar").addClass("hidden");
-    } else {
-        $(".navbar").removeClass("hidden");
-    }
-}
-</script>
 	</body>
 </html>
