@@ -13,6 +13,8 @@ var templates = template.Must(template.ParseFiles(
 	"templates/unisexAd.html",
 	"templates/maleAd.html",
 	"templates/newCallToAction.html",
+	"templates/about.html",
+	"templates/blog.html",
 	"templates/femaleAd.html"))
 
 // swipelong.com/
@@ -59,6 +61,24 @@ func femaleAdHandler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// swipelong.com/about
+func aboutHandler(w http.ResponseWriter, r *http.Request) {
+	err := templates.ExecuteTemplate(w, "about.html", nil)
+	if err != nil {
+		fmt.Println(err.Error())
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
+// swipelong.com/blog
+func blogHandler(w http.ResponseWriter, r *http.Request) {
+	err := templates.ExecuteTemplate(w, "blog.html", nil)
+	if err != nil {
+		fmt.Println(err.Error())
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+}
+
 type EmailSubmission struct {
 	EmailAddress string
 }
@@ -93,6 +113,9 @@ func main() {
 	http.HandleFunc("/ad3", newCallToActionHandler)
 	http.HandleFunc("/ad4", newCallToActionHandler)
 	http.HandleFunc("/api", apiHandler)
+	// New blog pages.
+	http.HandleFunc("/about", aboutHandler);
+	http.HandleFunc("/blog", blogHandler);
 	// public routes.
 	fs := http.FileServer(http.Dir("public"))
 	http.Handle("/public/", http.StripPrefix("/public", fs))

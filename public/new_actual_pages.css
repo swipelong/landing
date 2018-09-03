@@ -1,0 +1,221 @@
+.feature_image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.content .header {
+	text-transform: uppercase;
+}
+.content .subcontent {
+	color: #bfbfbf;
+}
+body {
+	background: #f9f9f9;
+}
+.blog_post_preview {
+	background: white;
+	border-radius: 10px;
+}
+.blog_post_preview .feature_image {
+	border-radius: 10px 10px 0px 0px;
+	height: 250px;
+}
+.content {
+	padding: 10px;
+	height: 150px;
+}
+.content .header {
+	font-size: 18px;
+	margin-top: 10px;
+	font-weight: 600;
+}
+p.subcontent {
+	font-size: 13px;
+	font-weight: 300;
+}
+.blog_post_preview {
+	margin-top: 30px;
+}
+.main_blog_preview {
+	height: 350px;
+}
+.main_blog_preview .feature_image {
+	height: 350px;
+}
+.main_blog_preview {
+	background: white;
+	border-radius: 10px;
+}
+.subcol .feature_image {
+	border-radius: 10px 0px 0px 10px;
+}
+.our_blog_square {
+	height: 350px;
+	background: #333333;
+}
+.our_blog_square * {
+	color: white;
+}
+.our_blog_square .header {
+	font-size: 23px;
+	font-style: italic;
+}
+button.swipelong_button_new {
+	background: #00b35c;
+	border: #00b35c;
+	color: white;
+	font-size: 11px !important;
+	letter-spacing: 2px;
+	padding-left: 50px !important;
+	padding-right: 50px !important;
+	text-shadow: none;
+	text-transform: uppercase;
+}
+button.swipelong_button_grey {
+	background: #333333;
+	border: #00b35c;
+	color: white;
+	font-size: 11px !important;
+	text-shadow: none;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+button.swipelong_button_submit {
+	background: #00b35c;
+	border: #00b35c;
+	color: white;
+	font-size: 11px !important;
+	text-shadow: none;
+}
+footer {
+	background-color: #333333 !important;
+}
+.feature_image.phones_bottom {
+	height: 293px;
+	background-position: center top;
+}
+.feature_image.phones_bottom {
+	height: 332px;
+	background-position: center bottom;
+	background-size: contain;
+}
+.our_blog_square {
+	border-radius: 10px;
+}
+nav.navbar.navbar-inverse.navbar-fixed-top {
+	background: white;
+	border: 1px solid #oab260;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+nav.navbar.navbar-inverse.navbar-fixed-top {
+	background: white;
+	border: 1px solid #oab260;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+button.navbar-toggle.collapsed {
+	border: none;
+}
+nav.navbar.navbar-inverse.navbar-fixed-top {
+	border: none;
+}
+ul.nav.navbar-nav.navbar-right li a {
+	background: white;
+	box-shadow: none;
+}
+div#navbar * {
+	text-shadow: none !important;
+}
+a.navbar-brand {
+	text-shadow: none !important;
+}
+ul.nav.navbar-nav.navbar-right li {
+	width: 100px;
+}
+img.main_logo {
+	height: 24px;
+}
+ul.nav.navbar-nav.navbar-right li a {
+	color: #616161 !important;
+	font-weight: 300;
+}
+ul.nav.navbar-nav.navbar-right li.active a {
+	font-weight: 400;
+}
+button.navbutton.btn.btn-success.swipelong_button_new {
+	margin-top: 11px;
+}
+button.navbar-toggle.collapsed {
+	background: #333333;
+}
+button.navbutton.btn.btn-success.swipelong_button_new {
+	margin-left: 10px;
+}
+.row .col-md-9 {
+	margin-top: 30px;
+}
+.row .col-md-3.ourblog {
+	margin-top: 30px;
+}
+.row.toprow {
+	margin-top: -30px;
+}
+.nav li a {
+	background: white !important;
+}
+.our_blog_square {
+	padding: 15px;
+}
+button.btn.btn-success.swipelong_button_submit {
+	font-size: 15px !important;
+	padding: 7px;
+	padding-left: 19px;
+	padding-right: 19px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+h2.header.bottom_part {
+	font-size: 24px !important;
+	line-height: 18px;
+}
+h2.header.bottom_part.not_bold {
+	font-weight: 400;
+}
+button.btn.btn-primary.swipelong_button_grey {
+	font-size: 14px !important;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding: 7px;
+	padding-left: 17px;
+	padding-right: 17px;
+}
+.content {
+min-height: 200x;
+
+}
+.our_blog_square .header {
+	letter-spacing: 5px;
+}
+/*-----------------------*/
+.row.row1 {
+    background: #2f2f2f;
+}
+.row.row1 * {
+    color: white;
+}
+.row1 .col-left {
+    text-transform: uppercase;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+}
+.row1 .col-md-4 {
+    font-weight: 100;
+    font-size: 13px;
+}
+.row.row1 {
+    padding: 22px;
+    border-radius: 10px;
+}
